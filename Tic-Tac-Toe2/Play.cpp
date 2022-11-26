@@ -10,123 +10,123 @@ using namespace std;
 
 HANDLE hConsole;
 
-bool Player::check_win() { //функция проверки выигрыша
+bool Player::check_win() { //С„СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂРєРё РІС‹РёРіСЂС‹С€Р°
 
 	if (field[0][0] == 'X' and
 		field[0][1] == 'X' and
 		field[0][2] == 'X') {
-		cout << "Крестик победил!" << endl;
+		cout << "РљСЂРµСЃС‚РёРє РїРѕР±РµРґРёР»!" << endl;
 		return true;
 	}
 
 	if (field[1][0] == 'X' and
 		field[1][1] == 'X' and
 		field[1][2] == 'X') {
-		cout << "Победил крестик!" << endl;
+		cout << "РљСЂРµСЃС‚РёРє РїРѕР±РµРґРёР»!" << endl;
 		return true;
 	}
 
 	if (field[2][0] == 'X' and
 		field[2][1] == 'X' and
 		field[2][2] == 'X') {
-		cout << "Победил крестик!" << endl;
+		cout << "РљСЂРµСЃС‚РёРє РїРѕР±РµРґРёР»!" << endl;
 		return true;
 	}
 
 	if (field[0][0] == 'X' and
 		field[1][0] == 'X' and
 		field[2][0] == 'X') {
-		cout << "Победил крестик!" << endl;
+		cout << "РљСЂРµСЃС‚РёРє РїРѕР±РµРґРёР»!" << endl;
 		return true;
 	}
 
 	if (field[0][1] == 'X' and
 		field[1][1] == 'X' and
 		field[2][1] == 'X') {
-		cout << "Победил крестик!" << endl;
+		cout << "РљСЂРµСЃС‚РёРє РїРѕР±РµРґРёР»!" << endl;
 		return true;
 	}
 
 	if (field[0][2] == 'X' and
 		field[1][2] == 'X' and
 		field[2][2] == 'X') {
-		cout << "Победил крестик!" << endl;
+		cout << "РљСЂРµСЃС‚РёРє РїРѕР±РµРґРёР»!" << endl;
 		return true;
 	}
 
 	if (field[0][0] == 'X' and
 		field[1][1] == 'X' and
 		field[2][2] == 'X') {
-		cout << "Победил крестик!" << endl;
+		cout << "РљСЂРµСЃС‚РёРє РїРѕР±РµРґРёР»!" << endl;
 		return true;
 	}
 
 	if (field[0][2] == 'X' and
 		field[1][1] == 'X' and
 		field[2][0] == 'X') {
-		cout << "Победил крестик!" << endl;
+		cout << "РљСЂРµСЃС‚РёРє РїРѕР±РµРґРёР»!" << endl;
 		return true;
 	}
 
 	if (field[0][0] == 'O' and
 		field[0][1] == 'O' and
 		field[0][2] == 'O') {
-		cout << "Победил нолик!" << endl;
+		cout << "РџРѕР±РµРґРёР» РЅРѕР»РёРє!" << endl;
 		return true;
 	}
 
 	if (field[1][0] == 'O' and
 		field[1][1] == 'O' and
 		field[1][2] == 'O') {
-		cout << "Победил нолик!" << endl;
+		cout << "РџРѕР±РµРґРёР» РЅРѕР»РёРє!" << endl;
 		return true;
 	}
 
 	if (field[2][0] == 'O' and
 		field[2][1] == 'O' and
 		field[2][2] == 'O') {
-		cout << "Победил нолик!" << endl;
+		cout << "РџРѕР±РµРґРёР» РЅРѕР»РёРє!" << endl;
 		return true;
 	}
 
 	if (field[0][0] == 'O' and
 		field[1][0] == 'O' and
 		field[2][0] == 'O') {
-		cout << "Победил нолик!" << endl;
+		cout << "РџРѕР±РµРґРёР» РЅРѕР»РёРє!" << endl;
 		return true;
 	}
 
 	if (field[0][1] == 'O' and
 		field[1][1] == 'O' and
 		field[2][1] == 'O') {
-		cout << "Победил нолик!" << endl;
+		cout << "РџРѕР±РµРґРёР» РЅРѕР»РёРє!" << endl;
 		return true;
 	}
 
 	if (field[0][2] == 'O' and
 		field[1][2] == 'O' and
 		field[2][2] == 'O') {
-		cout << "Победил нолик!" << endl;
+		cout << "РџРѕР±РµРґРёР» РЅРѕР»РёРє!" << endl;
 		return true;
 	}
 
 	if (field[0][0] == 'O' and
 		field[1][1] == 'O' and
 		field[2][2] == 'O') {
-		cout << "Победил нолик!" << endl;
+		cout << "РџРѕР±РµРґРёР» РЅРѕР»РёРє!" << endl;
 		return true;
 	}
 
 	if (field[0][2] == 'O' and
 		field[1][1] == 'O' and
 		field[2][0] == 'O') {
-		cout << "Победил нолик!" << endl;
+		cout << "РџРѕР±РµРґРёР» РЅРѕР»РёРє!" << endl;
 		return true;
 	}
 	else return false;
 }
 
-void Player::field_draw() { //функция отрисовки поля
+void Player::field_draw() { //С„СѓРЅРєС†РёСЏ РѕС‚СЂРёСЃРѕРІРєРё РїРѕР»СЏ
 
 	for (int row = 0; row < 3; row++) {
 		for (int col = 0; col < 3; col++)
@@ -146,14 +146,14 @@ void Player::play()
 		if (i % 2 == 0) {
 			while (true) {
 				cout << endl;
-				cout << "Ходит крестик:\n " << endl;
+				cout << "РҐРѕРґРёС‚ РєСЂРµСЃС‚РёРє:\n " << endl;
 				cout << endl;
-				cout << "Выберите точку (1-9): ";
+				cout << "Р’С‹Р±РµСЂРёС‚Рµ С‚РѕС‡РєСѓ (1-9): ";
 				cin >> pos;
 
 				if (pos == 1) {
 					if (field[0][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -164,7 +164,7 @@ void Player::play()
 				}
 				if (pos == 2) {
 					if (field[0][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -175,7 +175,7 @@ void Player::play()
 				}
 				if (pos == 3) {
 					if (field[0][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -186,7 +186,7 @@ void Player::play()
 				}
 				if (pos == 4) {
 					if (field[1][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -197,7 +197,7 @@ void Player::play()
 				}
 				if (pos == 5) {
 					if (field[1][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -208,7 +208,7 @@ void Player::play()
 				}
 				if (pos == 6) {
 					if (field[1][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -219,7 +219,7 @@ void Player::play()
 				}
 				if (pos == 7) {
 					if (field[2][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -230,7 +230,7 @@ void Player::play()
 				}
 				if (pos == 8) {
 					if (field[2][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -241,7 +241,7 @@ void Player::play()
 				}
 				if (pos == 9) {
 					if (field[2][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -256,14 +256,14 @@ void Player::play()
 		else
 		{
 			while (true) {
-				cout << "Ходит нолик: " << endl;
+				cout << "РҐРѕРґРёС‚ РЅРѕР»РёРє: " << endl;
 				cout << endl;
-				cout << "Введите точку (1-9): ";
+				cout << "Р’С‹Р±РµСЂРёС‚Рµ СЏС‡РµР№РєСѓ (1-9): ";
 				cin >> pos;
 
 				if (pos == 1) {
 					if (field[0][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -274,7 +274,7 @@ void Player::play()
 				}
 				if (pos == 2) {
 					if (field[0][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -285,7 +285,7 @@ void Player::play()
 				}
 				if (pos == 3) {
 					if (field[0][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -296,7 +296,7 @@ void Player::play()
 				}
 				if (pos == 4) {
 					if (field[1][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -307,7 +307,7 @@ void Player::play()
 				}
 				if (pos == 5) {
 					if (field[1][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -318,7 +318,7 @@ void Player::play()
 				}
 				if (pos == 6) {
 					if (field[1][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -329,7 +329,7 @@ void Player::play()
 				}
 				if (pos == 7) {
 					if (field[2][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -340,7 +340,7 @@ void Player::play()
 				}
 				if (pos == 8) {
 					if (field[2][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -351,7 +351,7 @@ void Player::play()
 				}
 				if (pos == 9) {
 					if (field[2][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -367,7 +367,7 @@ void Player::play()
 		if (i >= 8) {
 			if (check_win() == false) {
 				cout << endl;
-				cout << "Ничья" << endl;
+				cout << "РќРёС‡СЊСЏ" << endl;
 				break;
 			}
 		}
@@ -387,14 +387,14 @@ void Player::play_computer()
 		{
 			while (true) {
 				cout << endl;
-				cout << "Ходит крестик:\n" << endl;
+				cout << "РҐРѕРґРёС‚ РєСЂРµСЃС‚РёРє:\n" << endl;
 				cout << endl;
-				cout << "Выберите точку (1-9): ";
+				cout << "Р’С‹Р±РµСЂРёС‚Рµ С‚РѕС‡РєСѓ (1-9): ";
 				cin >> pos;
 
 				if (pos == 1) {
 					if (field[0][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -405,7 +405,7 @@ void Player::play_computer()
 				}
 				if (pos == 2) {
 					if (field[0][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -416,7 +416,7 @@ void Player::play_computer()
 				}
 				if (pos == 3) {
 					if (field[0][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -427,7 +427,7 @@ void Player::play_computer()
 				}
 				if (pos == 4) {
 					if (field[1][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -438,7 +438,7 @@ void Player::play_computer()
 				}
 				if (pos == 5) {
 					if (field[1][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -449,7 +449,7 @@ void Player::play_computer()
 				}
 				if (pos == 6) {
 					if (field[1][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -460,7 +460,7 @@ void Player::play_computer()
 				}
 				if (pos == 7) {
 					if (field[2][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -471,7 +471,7 @@ void Player::play_computer()
 				}
 				if (pos == 8) {
 					if (field[2][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -482,7 +482,7 @@ void Player::play_computer()
 				}
 				if (pos == 9) {
 					if (field[2][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -496,7 +496,7 @@ void Player::play_computer()
 		}
 		else
 		{
-			cout << "Ходит компьютер (нолик):" << endl;
+			cout << "РҐРѕРґРёС‚ РєРѕРјРїСЊСЋС‚РµСЂ (РЅРѕР»РёРє):" << endl;
 			while (true)
 			{
 				Sleep(250);
@@ -505,7 +505,7 @@ void Player::play_computer()
 
 				if (pos == 1) {
 					if (field[0][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -516,7 +516,7 @@ void Player::play_computer()
 				}
 				if (pos == 2) {
 					if (field[0][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -527,7 +527,7 @@ void Player::play_computer()
 				}
 				if (pos == 3) {
 					if (field[0][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -538,7 +538,7 @@ void Player::play_computer()
 				}
 				if (pos == 4) {
 					if (field[1][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -549,7 +549,7 @@ void Player::play_computer()
 				}
 				if (pos == 5) {
 					if (field[1][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -560,7 +560,7 @@ void Player::play_computer()
 				}
 				if (pos == 6) {
 					if (field[1][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -571,7 +571,7 @@ void Player::play_computer()
 				}
 				if (pos == 7) {
 					if (field[2][0] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -582,7 +582,7 @@ void Player::play_computer()
 				}
 				if (pos == 8) {
 					if (field[2][1] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -593,7 +593,7 @@ void Player::play_computer()
 				}
 				if (pos == 9) {
 					if (field[2][2] != 'o') {
-						cout << "Эта ячейка уже занята!\n" << endl;
+						cout << "Р­С‚Р° СЏС‡РµР№РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!\n" << endl;
 						continue;
 					}
 					else {
@@ -609,7 +609,7 @@ void Player::play_computer()
 		if (i >= 8) {
 			if (check_win() == false) {
 				cout << endl;
-				cout << "Ничья" << endl;
+				cout << "РќРёС‡СЊСЏ" << endl;
 				break;
 			}
 		}
@@ -624,12 +624,12 @@ void Player::settings()
 	short set;
 
 	system("cls");
-	cout << "Настройки цвета" << endl;
-	cout << "1) Красный" << endl;
-	cout << "2) Желтый" << endl;
-	cout << "3) Зеленый" << endl;
-	cout << "4) Синий" << endl;
-	cout << "5) Розовый\n" << endl;
+	cout << "РќР°СЃС‚СЂРѕР№РєРё С†РІРµС‚Р°" << endl;
+	cout << "1) РљСЂР°СЃРЅС‹Р№" << endl;
+	cout << "2) Р–С‘Р»С‚С‹Р№" << endl;
+	cout << "3) Р—РµР»С‘РЅС‹Р№" << endl;
+	cout << "4) РЎРёРЅРёР№" << endl;
+	cout << "5) Р РѕР·РѕРІС‹Р№\n" << endl;
 
 	cout << ("> ");
 	cin >> set;
@@ -640,7 +640,7 @@ void Player::settings()
 	case 1:
 
 		SetConsoleTextAttribute(hConsole, 4);
-		cout << "Установлен красный цвет\n!" << endl;
+		cout << "РЈСЃС‚Р°РЅРѕРІР»РµРЅ РєСЂР°СЃРЅС‹Р№ С†РІРµС‚!\n" << endl;
 		Sleep(1000);
 		system("cls");
 		text();
@@ -649,7 +649,7 @@ void Player::settings()
 	case 2:
 
 		SetConsoleTextAttribute(hConsole, 14);
-		cout << "Установлен жёлтый цвет\n!" << endl;
+		cout << "РЈСЃС‚Р°РЅРѕРІР»РµРЅ Р¶С‘Р»С‚С‹Р№ С†РІРµС‚!\n" << endl;
 		Sleep(1000);
 		system("cls");
 		text();
@@ -658,7 +658,7 @@ void Player::settings()
 	case 3:
 
 		SetConsoleTextAttribute(hConsole, 2);
-		cout << "Установлен зелёный цвет\n!" << endl;
+		cout << "РЈСЃС‚Р°РЅРѕРІР»РµРЅ Р·РµР»С‘РЅС‹Р№ С†РІРµС‚!\n" << endl;
 		Sleep(1000);
 		system("cls");
 		text();
@@ -667,7 +667,7 @@ void Player::settings()
 	case 4:
 
 		SetConsoleTextAttribute(hConsole, 3);
-		cout << "Установлен синий цвет\n!" << endl;
+		cout << "РЈСЃС‚Р°РЅРѕРІР»РµРЅ СЃРёРЅРёР№ С†РІРµС‚!\n" << endl;
 		Sleep(1000);
 		system("cls");
 		text();
@@ -676,14 +676,14 @@ void Player::settings()
 	case 5:
 
 		SetConsoleTextAttribute(hConsole, 5);
-		cout << "Установлен розовый цвет\n!" << endl;
+		cout << "РЈСЃС‚Р°РЅРѕРІР»РµРЅ СЂРѕР·РѕРІС‹Р№ С†РІРµС‚!\n" << endl;
 		Sleep(1000);
 		system("cls");
 		text();
 		break;
 
 	default:
-		cout << "Тут нет такой цифры!!" << endl;
+		cout << "РўР°РєРѕР№ С†РёС„СЂС‹ РЅРµС‚!" << endl;
 		break;
 	}
 }
@@ -692,12 +692,12 @@ void Player::text()
 {
 	short pos;
 	SetConsoleTitle(L"Tic-Tac-Toe");
-	cout << " Крестики - нолики\n" << endl;
-	cout << " Меню" << endl;
+	cout << " РљСЂРµСЃС‚РёРєРё - РЅРѕР»РёРєРё\n" << endl;
+	cout << " РњРµРЅСЋ" << endl;
 	cout << " --------------------------------" << endl;
-	cout << " 1) Игра с игроком" << endl;
-	cout << " 2) Игра с ботом" << endl;
-	cout << " 3) Настройки" << endl;
+	cout << " 1) РРіСЂР° СЃ РёРіСЂРѕРєРѕРј" << endl;
+	cout << " 2) РРіСЂР° СЃ Р±РѕС‚РѕРј" << endl;
+	cout << " 3) РќР°СЃС‚СЂРѕР№РєРё С†РІРµС‚Р°" << endl;
 	cout << " --------------------------------\n" << endl;
 
 	cout << ("> ");
@@ -716,7 +716,7 @@ void Player::text()
 		settings();
 		break;
 	default:
-		cout << " Технические шоколадки... \n Цифру правильную выбери!!! (1/2)" << endl;
+		cout << " РўРµС…РЅРёС‡РµСЃРєРёРµ С€РѕРєРѕР»Р°РґРєРё... \n Р¦РёС„СЂСѓ РїСЂР°РІРёР»СЊРЅСѓСЋ РІС‹Р±РµСЂРё!!! (1/2)" << endl;
 		break;
 	}
 }
